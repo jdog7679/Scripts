@@ -4,7 +4,7 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local VortexLoader = Instance.new("Frame")
+local WolfLoader = Instance.new("Frame")
 local Settings = Instance.new("ImageButton")
 local Welcome = Instance.new("ImageButton")
 local UpdateLogs = Instance.new("ImageButton")
@@ -18,7 +18,7 @@ local Rejoin = Instance.new("TextButton")
 local AntiAFK = Instance.new("TextButton")
 local Credits = Instance.new("TextLabel")
 local TheBoys = Instance.new("TextLabel")
-local ModsVortex = Instance.new("TextLabel")
+local ModsWolf = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local Upd = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
@@ -35,14 +35,14 @@ local TextLabel_10 = Instance.new("TextLabel")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-VortexLoader.Name = "Vortex Loader"
-VortexLoader.Parent = ScreenGui
-VortexLoader.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-VortexLoader.Position = UDim2.new(0.358415842, 0, 0.264940262, 0)
-VortexLoader.Size = UDim2.new(0, 385, 0, 236)
+WolfLoader.Name = "Wolf Loader"
+WolfLoader.Parent = ScreenGui
+WolfLoader.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+WolfLoader.Position = UDim2.new(0.358415842, 0, 0.264940262, 0)
+WolfLoader.Size = UDim2.new(0, 385, 0, 236)
 
 Settings.Name = "Settings"
-Settings.Parent = VortexLoader
+Settings.Parent = WolfLoader
 Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Settings.BackgroundTransparency = 1.000
 Settings.Position = UDim2.new(-0.0025839794, 0, 0.305084735, 0)
@@ -50,7 +50,7 @@ Settings.Size = UDim2.new(0, 75, 0, 74)
 Settings.Image = "http://www.roblox.com/asset/?id=5028771953"
 
 Welcome.Name = "Welcome"
-Welcome.Parent = VortexLoader
+Welcome.Parent = WolfLoader
 Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Welcome.BackgroundTransparency = 1.000
 Welcome.Position = UDim2.new(0.0180878546, 0, 0.0381355919, 0)
@@ -58,7 +58,7 @@ Welcome.Size = UDim2.new(0, 61, 0, 55)
 Welcome.Image = "http://www.roblox.com/asset/?id=5028778980"
 
 UpdateLogs.Name = "Update Logs"
-UpdateLogs.Parent = VortexLoader
+UpdateLogs.Parent = WolfLoader
 UpdateLogs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UpdateLogs.BackgroundTransparency = 1.000
 UpdateLogs.Position = UDim2.new(0.0180878546, 0, 0.644067824, 0)
@@ -66,7 +66,7 @@ UpdateLogs.Size = UDim2.new(0, 61, 0, 52)
 UpdateLogs.Image = "http://www.roblox.com/asset/?id=5027821117"
 
 Line.Name = "Line"
-Line.Parent = VortexLoader
+Line.Parent = WolfLoader
 Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Line.Position = UDim2.new(0.191214472, 0, 0, 0)
 Line.Size = UDim2.new(0, 2, 0, 236)
@@ -74,7 +74,7 @@ Line.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 Line.ImageColor3 = Color3.fromRGB(0, 85, 255)
 
 Tiltle.Name = "Tiltle"
-Tiltle.Parent = VortexLoader
+Tiltle.Parent = WolfLoader
 Tiltle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Tiltle.BackgroundTransparency = 1.000
 Tiltle.Position = UDim2.new(0.310292304, 0, -0.0593220368, 0)
@@ -86,7 +86,7 @@ Tiltle.TextSize = 20.000
 Tiltle.TextWrapped = true
 
 Tab.Name = "Tab"
-Tab.Parent = VortexLoader
+Tab.Parent = WolfLoader
 Tab.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 Tab.BorderColor3 = Color3.fromRGB(0, 85, 255)
 Tab.Position = UDim2.new(0.196382433, 0, 0.101694912, 0)
@@ -115,7 +115,7 @@ TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
 Set.Name = "Set"
-Set.Parent = VortexLoader
+Set.Parent = WolfLoader
 Set.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Set.BackgroundTransparency = 1.000
 Set.Position = UDim2.new(0.196382433, 0, 0.105932206, 0)
@@ -166,18 +166,18 @@ TheBoys.TextScaled = true
 TheBoys.TextSize = 14.000
 TheBoys.TextWrapped = true
 
-ModsVortex.Name = "Mods Vortex"
-ModsVortex.Parent = Set
-ModsVortex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ModsVortex.BackgroundTransparency = 1.000
-ModsVortex.Position = UDim2.new(0.125526562, 0, 0.258797348, 0)
-ModsVortex.Size = UDim2.new(0, 200, 0, 50)
-ModsVortex.Font = Enum.Font.SourceSans
-ModsVortex.Text = "~~ Moderators ~~"
-ModsVortex.TextColor3 = Color3.fromRGB(255, 255, 255)
-ModsVortex.TextScaled = true
-ModsVortex.TextSize = 14.000
-ModsVortex.TextWrapped = true
+ModsWolf.Name = "Mods Wolf"
+ModsWolf.Parent = Set
+ModsWolf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ModsWolf.BackgroundTransparency = 1.000
+ModsWolf.Position = UDim2.new(0.125526562, 0, 0.258797348, 0)
+ModsWolf.Size = UDim2.new(0, 200, 0, 50)
+ModsWolf.Font = Enum.Font.SourceSans
+ModsWolf.Text = "~~ Moderators ~~"
+ModsWolf.TextColor3 = Color3.fromRGB(255, 255, 255)
+ModsWolf.TextScaled = true
+ModsWolf.TextSize = 14.000
+ModsWolf.TextWrapped = true
 
 TextLabel_2.Parent = Set
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -191,7 +191,7 @@ TextLabel_2.TextSize = 18.000
 TextLabel_2.TextWrapped = true
 
 Upd.Name = "Upd"
-Upd.Parent = VortexLoader
+Upd.Parent = WolfLoader
 Upd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Upd.BackgroundTransparency = 1.000
 Upd.Position = UDim2.new(0.191214427, 0, 0.110169493, 0)
@@ -258,7 +258,7 @@ TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 14.000
 TextLabel_7.TextWrapped = true
 
-TextLabel_8.Parent = VortexLoader
+TextLabel_8.Parent = WolfLoader
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.BackgroundTransparency = 1.000
 TextLabel_8.Position = UDim2.new(-0.0533440933, 0, 0.271186441, 0)
@@ -268,7 +268,7 @@ TextLabel_8.Text = "Home"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextSize = 14.000
 
-TextLabel_9.Parent = VortexLoader
+TextLabel_9.Parent = WolfLoader
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.BackgroundTransparency = 1.000
 TextLabel_9.Position = UDim2.new(-0.0533440933, 0, 0.559322, 0)
@@ -278,7 +278,7 @@ TextLabel_9.Text = "Settings"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 14.000
 
-TextLabel_10.Parent = VortexLoader
+TextLabel_10.Parent = WolfLoader
 TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.BackgroundTransparency = 1.000
 TextLabel_10.Position = UDim2.new(-0.06892851, 0, 0.864406824, 0)
