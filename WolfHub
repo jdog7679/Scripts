@@ -1,75 +1,207 @@
-function intro()
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
+if game.PlaceId == 1111083356 then
+loadstring(game:HttpGet("https://pastebin.com/raw/1Yrie7Mx", true))()
+else
 
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local Frame = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Frame_3 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local Checkbar = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+Frame.Name = "Frame"
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(0, 0, 0.899999976, 0)
-Frame.Size = UDim2.new(0, 330, 0, 191)
+Frame.Position = UDim2.new(0.323762357, 0, 0.328685284, 0)
+Frame.Size = UDim2.new(0, 386, 0, 212)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(24, 24, 24)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
 
-TextLabel.Parent = Frame
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.108490564, 0)
+Frame_2.Size = UDim2.new(0, 386, 0, 2)
+
+TextLabel.Parent = Frame_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderSizePixel = 3
-TextLabel.Position = UDim2.new(-10, 0, 0.158000007, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.Gotham
-TextLabel.Text = "Wolf Hub"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 20.000
-TextLabel.TextStrokeTransparency = 0.500
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0155440411, 0, -11.5, 0)
+TextLabel.Size = UDim2.new(0, 163, 0, 23)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Vortex"
+TextLabel.TextColor3 = Color3.fromRGB(0, 157, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(9.31322575e-10, 0, -11.5, 0)
+TextLabel_2.Size = UDim2.new(0, 153, 0, 23)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.286341846, 0, 0.764150918, 0)
+TextButton.Size = UDim2.new(0, 146, 0, 23)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Frame_3.Name = "Frame"
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.259067357, 0, 0.764150918, 0)
+Frame_3.Size = UDim2.new(0, 166, 0, 23)
+Frame_3.Image = "rbxassetid://3570695787"
+Frame_3.ImageColor3 = Color3.fromRGB(52, 52, 52)
+Frame_3.ScaleType = Enum.ScaleType.Slice
+Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_3.SliceScale = 0.120
+
+TextLabel_3.Parent = Frame_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0634214133, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 148, 0, 23)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Run"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+ImageButton.Parent = Frame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.927461147, 0, 0.0141509436, 0)
+ImageButton.Size = UDim2.new(0, 21, 0, 20)
+ImageButton.Image = "rbxassetid://4988112250"
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.240932643, 0, 0.117924541, 0)
+TextLabel_4.Size = UDim2.new(0, 185, 0, 28)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Status: Online"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.259067357, 0, 0.25, 0)
+TextLabel_5.Size = UDim2.new(0, 178, 0, 27)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Exploit: Synapse"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+Checkbar.Name = "Checkbar"
+Checkbar.Parent = Frame
+Checkbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checkbar.BackgroundTransparency = 1.000
+Checkbar.Position = UDim2.new(0.235751286, 0, 0.535104871, 0)
+Checkbar.Size = UDim2.new(0, 184, 0, 17)
+Checkbar.Font = Enum.Font.SourceSans
+Checkbar.Text = "Found Game..."
+Checkbar.TextColor3 = Color3.fromRGB(255, 255, 255)
+Checkbar.TextScaled = true
+Checkbar.TextSize = 14.000
+Checkbar.TextWrapped = true
 
 -- Scripts:
 
-local function SXVR_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
+local function ZUHK_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
-	local t = 4; --how long does it take to go through the rainbow
-
-while wait() do
-	local hue = tick() % t / t
-	local color = Color3.fromHSV(hue, 1, 1)
-	script.Parent.TextColor3 = color
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Checkbar.Text = "Found Game..."
+		wait(2)
+		script.Parent.Parent.Checkbar.Text = "Enjoy The Hub..."
+		wait(2)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub"))()
+		script.Parent.Parent:Destroy()
+	end)
 end
+coroutine.wrap(ZUHK_fake_script)()
+local function GXRHMH_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(GXRHMH_fake_script)()
+local function AHTNHA_fake_script() -- TextLabel_5.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_5)
+
 	
+	    if syn then
+	    script.Parent.Text = "Exploit: Synapse"
+	    else
+	    if CALAMARI_PLATFORM then
+	    script.Parent.Text = "Exploit: Calamari"
+	    else
+	    if CALAMARI_WINDOWS or CALAMARI_MACOS then
+	    script.Parent.Text = "Exploit: Calamari"
+	    else
+	    if KRNL_LOADED then
+	    script.Parent.Text = "Bomb Simulator v2 | Krnl"
+	    else
+	    if is_protosmasher_caller then
+	    script.Parent.Text = "Bomb Simulator v2 | Proto"
+	    else
+	    script.Parent.Text = "Bomb Simulator v2 | Support"
+	    end
+	    end
+	    end
+	    end
+	    end
 end
-coroutine.wrap(SXVR_fake_script)()
-local function ZHGMMIU_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
+coroutine.wrap(AHTNHA_fake_script)()
+local function GASXGI_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
 
-	script.Parent:TweenPosition(UDim2.new(0.5,-170,0,0),"In","Quad",0.5)
-wait(4)
-script.Parent:TweenPosition(UDim2.new(0.5,-600,0,0),"In","Quad",0.5)
-wait(2)
---script.Parent.Parent:Remove()	
+	script.Parent.Active = true
+	script.Parent.Draggable = true
 end
-coroutine.wrap(ZHGMMIU_fake_script)()
+coroutine.wrap(GASXGI_fake_script)()
 end
-intro()
-
-function antiafk()
-spawn(function()
-    while wait(3) do
-        local vu = game:GetService("VirtualUser")
-        game:GetService("Players").LocalPlayer.Idled:connect(function()
-        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-        wait(1)
-        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-        end)
-        wait(60000000000000000)
-    end
-end)
-end
-antiafk()
